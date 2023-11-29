@@ -1,0 +1,22 @@
+[
+  {
+    "name": "John",
+    "hair": "Black",
+    "votes": 0
+  },
+  {
+    "name":"Cathy",
+    "hair":"Blonde",
+    "votes": 0
+  },
+  {
+    "name": "Allie",
+    "hair": "Dark Brown",
+    "votes": 0
+  },
+  {
+    "name": "Zach",
+    "hair": "Brown",
+    "votes": 0
+  }
+]

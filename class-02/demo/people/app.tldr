@@ -66,9 +66,9 @@
     {
       "id": "pointer:pointer",
       "typeName": "pointer",
-      "x": 29.197410583496094,
-      "y": 241.3827362060547,
-      "lastActivityTimestamp": 1701196422336,
+      "x": 593.341064453125,
+      "y": 241.3301544189453,
+      "lastActivityTimestamp": 1701198976471,
       "meta": {}
     },
     {
@@ -145,7 +145,7 @@
       "isReadonly": false,
       "meta": {},
       "id": "instance:instance",
-      "currentPageId": "page:page",
+      "currentPageId": "page:xoh7CcX6rN3jzwcieHlkx",
       "typeName": "instance"
     },
     {
