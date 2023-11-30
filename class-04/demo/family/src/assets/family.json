@@ -1,0 +1,34 @@
+[
+  {
+    "_id": "asdkfhasdkhasdflk",
+    "name": "John",
+    "hair": "None",
+    "pets": ["Rosie", "Geno"],
+    "age": 55,
+    "votes": 0
+  },
+  {
+    "_id": "asdf98asdffj",
+    "name": "Cathy",
+    "hair": "Blonde",
+    "pets": ["Rosie", "Geno"],
+    "age": 50,
+    "votes": 0
+  },
+  {
+    "_id": "asdlfj09f903",
+    "name": "Zach",
+    "hair": "Brown",
+    "pets": ["Milo", "Chloe"],
+    "age": 25,
+    "votes": 0
+  },
+  {
+    "_id": "afoa98afsd908asdfj",
+    "name": "Allie",
+    "hair": "Black",
+    "pets": [],
+    "age": 18,
+    "votes": 0
+  }
+]
