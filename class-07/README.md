@@ -106,3 +106,58 @@ In this class we will build our own custom Express server in Node.js. We will se
        response.send(`you sent the city of ${city}`)
      });
      ```
+
+## Getting Started
+
+### React App
+
+1. Create a new React App with Vite `npm create vite@latest front-end`
+1. Perform initial installation and add any dependencies
+   - `npm install`
+   - `npm install axios bootstrap react-bootstrap react-if` 
+1. Create a repository (front-end) at GitHub
+1. Connect your React App to GitHub
+   - git init
+   - git branch -M main
+   - git remote add origin (url to your repo, copied from gitHub)
+   - git add .
+   - git commit -m "initial commit"
+   - git push origin main
+1. Clear out all of the starter-code from the app and alter `App.jsx` to just render an `<h1>` with Hello World in it 
+1. Deploy your app to Netlify
+1. Verify that you can see the starte app deployed at Netlify
+
+### Express App
+
+1. Create a new repository (back-end) at GitHub
+   - Add a README
+   - Choose the MIT license
+   - Choose the "Node" .gitignore template
+   - Make it "public"
+   - Copy the URL
+1. Clone this on your computer in a different folder from your react app
+1. Create a file called server.js (`touch server.js`)
+1. Initialize an NPM module 
+   - `npm init -y`
+   - Install the basic dependencies for an express app
+   - `npm install express cors dotenv axios`
+1. Write a basic express server (use the above notes and demo as the basis)
+1. Store the `PORT` in a file called `.env`
+1. Deploy this to Render.com
+1. Verify that you can see data coming from the `/` route once deployed
+
+### Getting them to work together
+
+1. Change your Express server's `/` route to return a JSON object. Something simple like:
+   `{ message: "Hello" }`
+1. Push to gitHub so that it deploys to render.com
+1. Add a button to your React app that, when clicked, will do an async axios call to your server's `/` route
+   - This will require that you put the URL to your server in the `.env.local` file and use that in the app to make the Axios call
+   - We do this for security!
+   - (This is shown in the demo)
+1. When the data comes back, put it into state, and render that `message` in the `<h1 />`
+1. Push to github so that it will deploy to netlify.com
+
+At this point, you should be able to click a button and see the data from your server flowing to the front-end.
+
+From this point, you can tailor the server and the react app together to accomplish ANY goal!
