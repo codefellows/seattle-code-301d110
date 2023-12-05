@@ -14,11 +14,18 @@ function Map(props) {
 
    // { this ? that : somethingElse }
   return (
-    <When condition={props.latitude && props.longitude}>
-      <figure>
-        <img src={`https://maps.locationiq.com/v3/staticmap?key=${API_KEY}&center=${props.latitude},${props.longitude}&size=400x300&format=png`} width="500" />
-      </figure>
-    </When>
+    <If condition={props.latitude && props.longitude}>
+      <Then>
+        <figure>
+          <img src={`https://maps.locationiq.com/v3/staticmap?key=${API_KEY}&center=${props.latitude},${props.longitude}&size=400x300&format=png`} width="500" />
+        </figure>
+      </Then>
+      <Else>
+        <figure>
+          <img src="https://placehold.it/500x400" width="500" />
+        </figure>
+      </Else>
+    </If>
   )
 }
 

@@ -1,0 +1,13 @@
+{
+    "food": [
+        { "name": "Peanut Butter", "store":"Freddies" },
+        { "name": "Bread", "store": "Bakery" },
+        { "name": "Pringles", "store": "Freddies" },
+        { "name": "Count Chocula", "store": "Freddies" }
+    ],
+    "supplies": [
+        {"name": "Hammer", "store":"Home Depot"},
+        {"name": "Tape", "store": "Freddies"},
+        {"name": "Rake", "store": "Home Depot"}
+    ]
+}
