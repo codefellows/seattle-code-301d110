@@ -13,9 +13,27 @@ function App() {
       let response = await axios.get(`${API}/shopping-list?type=${listType}`);
       console.log(response);
       setData( response.data );
+      setLatitude( response.data[0].latitude);
+
+      // Do not depend on state, feed in the lat/lon directly from the request data
+      showWeather(response.data[0].latitude, response.data[0].longitude)
+      // showMovies(response.data[0].latitude, response.data[0].longitude)
+      // showRestaurants(response.data[0].latitude, response.data[0].longitude)
+
     } catch(e) {
       console.error(e.message);
     }
+  }
+
+  async function showWeather(latidude, longitude) {
+    axios.get( "http://server.com",
+      {
+         params: {
+           latitude: latidude,
+           longitude: longitude
+         }
+      }
+    );
   }
 
   function getFood() {
@@ -34,7 +52,7 @@ function App() {
       <button onClick={getSupplies}>Get Supplies List</button>
       <ul>
         {
-          data.map( (thing,idx) => 
+          data.map( (thing,idx) =>
             <li key={idx}>{thing.name}</li>
           )
         }
