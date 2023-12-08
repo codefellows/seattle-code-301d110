@@ -1,0 +1,15 @@
+   
+   // (pretend) Fetch a list of photos from a server
+    // let data = [
+    //   {
+    //     name: "Image 1",
+    //     url: "https://via.placeholder.com/200x100?text=Image%201"
+    //   },
+    //   {
+    //     name: "Image 2",
+    //     url: "https://via.placeholder.com/200x100?text=Image%202"
+    //   }
+    // ]
+
+    // put photos into state
+    // setPhotos(data);
