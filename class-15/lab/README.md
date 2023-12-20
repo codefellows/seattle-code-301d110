@@ -12,12 +12,18 @@ Once you have that hooked up, you will send that JWT (that essentially says that
 
 You will be provided the following resources:
 
-1. A simple express API server and React application that can list "dogs" from a database
-1. Authorization library for your server
-1. Login/Logout buttons for your client
+1. `server` folder: A simple express API server and "Dogs" data model with a `get` route
+1. `client` folder: A React application that should connect to your `server` and can list "dogs" from a database
+1. `auth-library` folder:
+   - Authorization library for your server
+   - Login/Logout buttons for your client that use Auth0
 
 
 ## Feature Tasks
+
+1. Create 2 new GitHub repositories. One for the front-end app and one for the back-end server.
+1. Setup deployment pipelines at Netlify and Render.com for each of them.
+1. For your back-end, ensure you connect to an existing MongoDB database.
 
 ### Authenticating the user on the front-end
 
@@ -93,7 +99,8 @@ Add this information to your README.
    - The other members of your team will contribute collaboratively
 1. Complete all Feature Tasks for the lab, according to the instructions above.
 1. Create a PR back to the `main` branch of the repository, showing ALL your work, and merge it cleanly.
-1. On Canvas, submit a link to this PR. Add a comment in your Canvas assignment which includes the following:
+1. On Canvas, submit a link to this PR as well as a link to your deployed applications.
+1. Add a comment in your Canvas assignment which includes the following:
     - A link to the deployed version of your latest code.
     - A question within the context of this lab assignment.
     - An observation about the lab assignment, or related 'Ah-hah!' moment.
